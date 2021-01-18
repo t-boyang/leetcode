@@ -1,35 +1,26 @@
-public class isMatch {
+public class IsMatch {
     public boolean isMatch(String s, String p) {
-        int m = s.length();
-        int n = p.length();
-        boolean[][] dp = new boolean[m + 1][n + 1];
+        boolean[][] dp = new boolean[s.length() + 1][p.length() + 1];
         dp[0][0] = true;
-        for (int i = 0; i < m; i++) {
-            for (int j = 1; j < n; j++) {
-                if (p.charAt(j - 1) == '*') {
-                    dp[i][j] = dp[i][j - 2];
-                    if (isMatch(s, i, p, j - 1)) {
-                        dp[i][j] = dp[i][j - 2] || dp[i - 1][j];
-                    }
-                } else {
-                    if (isMatch(s, i, p, j)) {
-                        dp[i][j] = dp[i - 1][j - 1];
-                    } else {
-                        dp[i][j] = false;
-                    }
-                }
+        for (int i = 1; i <= p.length(); i++) {
+            if (p.charAt(i - 1) == '*') {
+                dp[0][i] = true;
+            } else {
+                break;
             }
         }
-        return dp[m][n];
+        for (int i = 1; i <= s.length(); i++)
+            for (int j = 1; j <= p.length(); j++) {
+                if (s.charAt(i - 1) == p.charAt(j - 1) || p.charAt(j - 1) == '?') {
+                    dp[i][j] = dp[i - 1][j - 1];
+                } else if (p.charAt(j - 1) == '*') {
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
+                }
+            }
+        return dp[s.length()][p.length()];
     }
 
-    private boolean isMatch(String s, int i, String p, int j) {
-        if (i == 0) {
-            return false;
-        }
-        if (p.charAt(j - i) == '.') {
-            return true;
-        }
-        return s.charAt(i - 1) == s.charAt(j - 1);
+    public static void main(String[] args) {
+        System.out.println(new IsMatch().isMatch("acdcb", "a*c?b"));
     }
 }

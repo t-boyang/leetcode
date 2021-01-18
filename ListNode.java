@@ -1,8 +1,7 @@
 public class ListNode {
-    ListNode next;
-    int val;
-
-    public ListNode(int val) {
-        this.val = val;
+    public ListNode next;
+    public int val;
+    public ListNode(int val){
+        this.val=val;
     }
 }

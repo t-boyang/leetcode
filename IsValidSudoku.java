@@ -2,7 +2,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class IsValidSudoku {
-
     public boolean isValidSudoku(char[][] board) {
         if (board.length == 0 && board[0].length == 0) {
             return false;

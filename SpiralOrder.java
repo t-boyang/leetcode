@@ -5,11 +5,11 @@ public class SpiralOrder {
     public List<Integer> spiralOrder(int[][] matrix) {
         List<Integer> result = new ArrayList<>();
         int rows = matrix.length;
-        int cloumns = matrix[0].length;
+        int columns = matrix[0].length;
         int top = 0;
         int bottom = rows - 1;
         int left = 0;
-        int right = cloumns - 1;
+        int right = columns - 1;
         while (left <= right && top <= bottom) {
             for (int i = top; i <= right; i++) {
                 result.add(matrix[top][i]);

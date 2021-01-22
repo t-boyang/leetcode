@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Map;
 
-public class buildTree {
+public class BuildTree {
     private Map<Integer, Integer> map = new HashMap<>();
     private int[] preorder;
 
@@ -27,7 +27,7 @@ public class buildTree {
     public static void main(String[] args) {
         int[] preorder = { 3, 9, 20, 15, 7 };
         int[] inorder = { 9, 3, 15, 20, 7 };
-        TreeNode node = new buildTree().buildTree(preorder, inorder);
+        TreeNode node = new BuildTree().buildTree(preorder, inorder);
         System.out.println(new LevelOrder().levelOrder(node));
     }
 }

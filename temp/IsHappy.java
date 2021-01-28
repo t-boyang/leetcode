@@ -12,7 +12,7 @@ public class IsHappy {
     public boolean isHappy(int n) {
         int slowRunner = n;
         int fastRunner = getNext(n);
-        while  (fastRunner  ! = 1) { 
+        while  (fastRunner!=1) { 
             if (slowRunner == fastRunner) {
                 return false;
             }

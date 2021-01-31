@@ -1,9 +1,6 @@
 package temp;
-import java.util.Arrays;
-import java.util.Map;
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Random;
 
 public class GetLeastNumbers {
     public int findKthLargest(int[] nums, int k) {

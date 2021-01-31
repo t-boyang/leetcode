@@ -1,5 +1,3 @@
-import javax.crypto.spec.ChaCha20ParameterSpec;
-
 public class IsPalindrome {
     public boolean isPalindrome(String s) {
         int i = 0, j = s.length() - 1;

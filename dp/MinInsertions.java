@@ -1,3 +1,4 @@
+package dp;
 public class MinInsertions {
     public int minInsertions(String s) {
         int[][] dp = new int[s.length()][s.length()];

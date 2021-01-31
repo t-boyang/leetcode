@@ -1,3 +1,4 @@
+package temp;
 public class HammingWeight {
     public int hammingWeight(int n) {
         int ans = 0;

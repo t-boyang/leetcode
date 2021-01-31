@@ -1,3 +1,5 @@
+package temp;
+
 public class MajorityElement {
     public int majorityElement(int[] nums) {
         int vote = 0;

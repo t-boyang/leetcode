@@ -1,3 +1,5 @@
+package two;
+
 public class FindPeakElement {
     public int findPeakElement(int[] nums) {
         int left=0;

@@ -1,3 +1,5 @@
+package temp;
+
 class Node {
     int val;
     Node next;

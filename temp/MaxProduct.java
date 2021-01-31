@@ -1,3 +1,5 @@
+package temp;
+
 public class MaxProduct {
     public int maxProduct(int[] nums) {
         int max=nums[0];

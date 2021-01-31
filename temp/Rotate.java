@@ -1,3 +1,4 @@
+package temp;
 public class Rotate {
     public void rotate(int[] nums, int k) {
         k = k % nums.length;

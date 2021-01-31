@@ -1,3 +1,4 @@
+package temp;
 public class TitleToNumber {
     public int titleToNumber(String s) {
         int ans = 0;

@@ -1,3 +1,4 @@
+package temp;
 public class NumIslands {
     public int numIslands(char[][] grid) {
         if (grid.length == 0 || grid[0].length == 0) {

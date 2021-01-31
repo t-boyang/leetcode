@@ -1,3 +1,5 @@
+package temp;
+
 public class IsHappy {
     public int getNext(int n) {
         int totalSum = 0;

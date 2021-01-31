@@ -1,3 +1,5 @@
+package two;
+
 public class Search {
     public int search(int[] nums, int target) {
         if (nums.length == 0) {

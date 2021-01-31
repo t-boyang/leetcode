@@ -1,3 +1,5 @@
+package two;
+
 public class SearchRange {
     public int[] searchRange(int[] nums, int target) {
         if (nums.length == 0) {

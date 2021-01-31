@@ -1,3 +1,4 @@
+package temp;
 public class GetIntersectionNode {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
         ListNode p = headA;
